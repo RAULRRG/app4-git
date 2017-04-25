@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+<head>
+  <meta charset="utf-8">
+  <title>segunda aplicacion movil</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link  rel= "stylesheet"href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo javaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+
+
+
+</head>
+<body onLoad="MM_preloadImages('imagenes/antecedentes2.jpg','imagenes/compania2.jpg')">
+
+<div data-role="page" id="principal" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+      <h1>Telefonia celular </h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    </div>
+    <div> 
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+         <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h1> ¿que es un telefono celular?</h1>
+          <p> se muestra la Definicion de telefono celular</p>    
+         </a>
+     </li>
+
+    <li class="ui-first-child ui-last-child">
+         <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h1> Historia del telefono celular</h1>
+          <p> aqui se muestra la historia de el telefono celular</p>     
+         </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> clasificacion de acuerdo a su gama </h2>
+        <p> muestra la clasificacion por gamas </p>
+       </a> 
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> compañias en mexico que manejan el servicio de telefonia celular </h2>
+        <p> Muestra las compañias de mexico que tienen este servicio </p>
+       </a> 
+     </li>  
+      <li class="ui-first-child ui-last-child">
+       <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> telefonos del futuro </h2>
+        <p> Muestra los prototipos de telefonos que se planen crear en un futuro </p>
+       </a> 
+     </li> 
+     </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+       <img src="imagenes/logo.png" width="46" height="46">
+     </div>
+     <div>
+       <h4>Aplicacion dos</h4>
+       <h4> Raul guerrero Ruiz</h4>
+     </div>
+    </div>
+   </div> 
+ <div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+     <h1> DEFINICION </h1>
+     </div>
+     <div data-role="content" align="center">
+      </div> 
+     
+    <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/futuro2.jpg',0)"><img src="imagenes/futuro1.jpg" width="272" height="185" id="Image3"></a></center>  
+        <h2> <p><font size="+1" face="Comic Sans MS, cursive">
+      Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</font></p> </h2>
+         
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1> caracteristicas </h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/definicion3.jpg" width="50%" height="50%">
+        </div>
+     </div>
+      </div>
+    </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4> Aplicacion Uno, RGR</h4>
+     </div>
+    </div>
+  
+   <!--</div>-->
+    
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+     <h1> ANTECEDENTES </h1>
+     </div>
+     <div data-role="content" align="center">
+      <div> 
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/antecedentes2.jpg',1)"><img src="imagenes/antecedentes1.jpg" width="190" height="266" id="Image6"></a>
+      
+<p><font size="+1" face="Comic Sans MS, cursive">
+        En 1939, solo el 35,5 % de los estadounidenses tenía teléfonos en sus casas. En ese mismo año la exhibición «Futurama» de la Feria Mundial anticipó los teléfonos portátiles inalámbricos.
+
+La compañía Motorola especializada en la fabricación de radios de doble vía, presenta su transmisor del mismo nombre, que permitía tener comunicadas las tropas en la segunda guerra mundial. Físicamente este aparato era del tamaño de una botella, pesado e incómodo, pero se podía transportar para todos los lados.</font></p></div>
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1> Cronologia </h1>
+        <div> 
+        </div>
+        <div>
+           <img src="imagenes/antecedentes3.jpg" width="50%" height="50%">
+        </div>
+     </div>
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4> Aplicacion Dos, RGR</h4>
+   </div>
+    </div>
+   </div>
+   
+ <div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+      <h1> CLASIFICACION </h1>
+    </div>
+     <div data-role="content" align="center">
+      <div> 
+     
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/gama2.jpg',1)"><img src="imagenes/gama1.jpg" width="305" height="165" id="Image5"></a>
+  <p> <font size="3" face="Comic Sans MS, cursive" color="red">Gama baja</font><br><font size="2" face="Comic Sans MS, cursive"> En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones (Ej: el nokia n8 es una reliquia de colección pero su cámara es muy adelantada para cuando fue lanzado al mercado)
+
+Suelen ser pequeñosHTC-desire-960x623
+Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone (ej:nokia)
+Precios muy economicos
+Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)
+No reciben soporte ni actualizaciones.</font><br>
+
+<font size="3" face="Comic Sans MS, cursive" color="red">Gama media</font>
+<br><font size="2" face="Comic Sans MS, cursive">
+Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.
+
+Suelen ser muy equilibrados en sus características
+Generalmente no superan los 500 dólares en precio (como mucho).
+Tienen algunas funciones de la gama alta del momento.
+Los materiales ya son de calidad aceptable.
+Pantallas que no superan las 4.5 pulgadas (en promedio).
+Cámaras de 3 a 5 Mpx
+Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM
+Telefonos que entran dentro de está categoría:apertura-moviles-gama-media
+</font><br>
+<font size="+1" face="Comic Sans MS, cursive" color="red">Gama alta</font>
+<br><font size="2" face="Comic Sans MS, cursive">
+
+Aquí se ubican los mejores, puedes hasta lavarte los dientes con ellos (es broma), se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.
+
+Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.
+
+También pueden incluirse otros terminales no tan nuevos pero que siguen siendo una excelente opción en gama alta aunque no cumplan con el requisito del precio.
+
+Pantallas de 4 pulgadas en adelante
+Memoria interna desde 16GB
+Soporte de actualizaciones (las recibe antes pero depende de la marca)
+Diseñados para redes 4G
+Muchos núcleos, procesadores y RAM para que sean muy rápidos
+Cámaras de calidad desde 8 Mpx
+Destacan por ser relativamente delgados
+Eficiencia energética
+Se conectan con la TV
+Desde 800 dólares en adelante
+Se conectan con Wearables (Galaxy Gear,iWatch, etc)
+Mide tu ritmo cardíaco, predice el futuro, te ayuda a bajar de peso, puedes mirar las estrellas, lee tu mente (es broma) y todo lo que se te ocurra.</font></p></div>
+      <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1> Tabla  </h1>
+        <div> 
+        </div>
+        <div>
+           <img src="imagenes/gama3.jpg" width="50%" height="50%">
+        </div>
+     </div>
+   </div>
+   </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4> Aplicacion dos, RGR</h4> 
+    </div>
+    </div>
+  <!--</div>-->
+  
+ <div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+      <h1> compañias de mexico con servicio de telefonia celular </h1>
+    </div>
+     <div data-role="content" align="center">
+      <div> 
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/compania2.jpg',1)"><img src="imagenes/compania1.jpg" width="324" height="155" id="Image10"></a>
+
+            <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1><center> TELCEL </center></h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/telcel.png" width="46%" height="19%"></center>
+           
+           <a href="www.telcel.com">Ir a la pagina oficial de TELCEL</a>
+      </div>
+     </div>
+   </div>
+   </div>
+      
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1><center> UNEFON </center></h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/unefon.png" width="50%" height="19%"></center>
+           
+           <a href="www.unefon.com.mx/">Ir a la pagina oficial de UNEFON</a>
+      </div>
+     </div>
+   </div>
+          <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1><center> IUSACEL </center></h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/iusacell.png" width="38%" height="15%"></center>
+           
+           <a href="www.iusacell.com">Ir a la pagina oficial de IUSACEL</a>
+      </div>
+     </div>
+   </div>
+          <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1><center> NEXTEL </center></h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/nextel.png" width="42%" height="17%"></center>
+           
+           <a href="tienda.nextel.com.ar/">Ir a la pagina oficial de NEXTEL</a>
+      </div>
+     </div>
+   </div>
+            <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1><center> MOVISTAR </center></h1>
+        <div> 
+        </div>
+        <div>
+           <center><img src="imagenes/movistar.png" width="42%" height="13%"></center>
+           
+           <a href="www.movistar.com.mx">Ir a la pagina oficial de MOVISTAR</a>
+           
+      </div>
+     </div>
+   </div>
+   </div>
+   
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4> Aplicacion dos, RGR</h4> 
+    </div>
+    </div>
+  <!--</div>-->
+  
+ <div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+      <h1> TELEFONOS DEL FUTURO </h1>
+    </div>
+     <div data-role="content" align="center">
+      <div> 
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/definicion2.jpg',1)"><img src="imagenes/definicion1.jpg" width="225" height="225" id="Image4"></a>
+        <p><font size="+1" face="Comic Sans MS, cursive">Pantallas flexibles, transparentes o de papel, teléfonos armables y sistemas que permitan comunicarnos con los demás sin usar las redes telefónicas son cosas que convergerán en un futuro que cada vez se ve menos lejano.<br>La telefonía móvil es uno de los segmentos de la tecnología que más ha evolucionado. Desde la presentación en aquel 1983 del Motorola DynaTAC 8000x, considerado el primer teléfono celular del mundo, en poco más de 30 años los teléfonos móviles han revolucionado el mundo y la forma en la que nos comunicamos.</font></p>
+           <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1> vision del futuro </h1>
+        <div> 
+        </div>
+        <div>
+           <img src="imagenes/futuro3.jpg" width="50%" height="50%">
+        </div>
+     </div>
+       </div>
+   </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4> Aplicacion Dos, RGR</h4> 
+    </div>
+    <!--</div>-->
+  </div>
+ 
+ 
+</body>
+</html>
